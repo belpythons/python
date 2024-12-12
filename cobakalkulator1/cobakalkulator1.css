@@ -1,0 +1,78 @@
+/* Atur gaya dasar untuk body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0; /* Warna latar belakang yang lebih lembut */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Times New Roman', Times, serif;
+}
+
+/* Gaya untuk container kalkulator */
+.calculator {
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff; /* Warna putih untuk kalkulator */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Tambah shadow untuk kedalaman */
+    width: 300px; /* Lebar kalkulator */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gaya untuk tampilan layar */
+.display {
+    width: 100%;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk efek kedalaman di dalam */
+    color: #333;
+}
+
+/* Gaya untuk tata letak tombol */
+.buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Tombol dalam grid */
+    gap: 10px;
+}
+
+/* Gaya umum untuk semua tombol */
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #f1f1f1; /* Warna latar tombol */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s; /* Efek transisi */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk tombol */
+}
+
+/* Hover dan efek interaksi untuk tombol */
+button:hover {
+    background-color: #efefef; /* Warna saat dihover */
+    transform: scale(0.7); /* Efek klik */
+}
+
+button:active {
+    transform: scale(0.5); /* Efek klik */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow lebih kecil saat diklik */
+}
+
+/* Gaya untuk tombol khusus */
+button:nth-child(4n) {
+    background-color: #ffcc00; /* Warna khusus untuk tombol operator */
+    color: white;
+}
+
+button:nth-child(4n):hover {
+    background-color: #ffb300; /* Warna hover untuk tombol operator */
+}

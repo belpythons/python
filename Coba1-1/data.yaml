@@ -1,0 +1,13 @@
+names:
+- Boncabe
+- Powerbank
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: coba1-oqmby
+  url: https://universe.roboflow.com/hanif-nurkhalis-ohqsm/coba1-oqmby/dataset/1
+  version: 1
+  workspace: hanif-nurkhalis-ohqsm
+test: ../test/images
+train: ../train/images
+val: ../valid/images
